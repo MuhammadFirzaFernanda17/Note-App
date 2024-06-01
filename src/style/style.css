@@ -1,0 +1,197 @@
+body{
+    background-image: linear-gradient(to right, #97E7E1, #6AD4DD);
+    font-family: 'Nunito', sans-serif;
+}
+
+.plus
+{
+    font-size: 75px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.details p {
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.details span {
+    font-size: 15px;
+    color: #666;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+.bottom-content {
+    position: relative;
+    display: flex;
+    bottom : 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 95px;
+    color: #999;
+}
+
+.bottom-content span {
+    font-size: 14px;
+}
+
+.menu-setting {
+    position: absolute;
+    right: 10px;
+  }
+
+.menu-setting button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.menu-setting button.edit:hover {
+    color: #28a745;
+}
+
+.menu-setting button.delete:hover {
+    color: #dc3545;
+}
+
+.menu-setting button:hover {
+    transform: scale(1.1); 
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#simpan-edit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#tanggal {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#tambah-catatan {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70%;
+    max-width: 400px;
+}
+
+.delete-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70%;
+    max-width: 400px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hapus-catatan {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 230px;
+}
+
+#batal-hapus {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
